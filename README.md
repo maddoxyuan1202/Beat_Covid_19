@@ -15,7 +15,7 @@ To download and install:
 
 ```bash
 git clone https://github.com/maddoxyuan1202/Beat_Covid_19.git
-cd nodejs_fullstack
+cd Beat_Covid_19
 npm install
 ```
 Running Backend:
