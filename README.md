@@ -34,3 +34,4 @@ node app.js
 ```
 Then open your browser to http://localhost:8000:
 
+<img alt="Frontend" src="frontend.png" width="400">
