@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Loading bootstrap css file to format our html -->
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <!-- Loading our own styles which is an animation for spinning wheels indicating waiting time -->
+    <link href="style.css" rel="stylesheet" id="bootstrap-css" />
+
+    <!-- Loading bootstrap css file to format our html -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Loading axios library necessary for making HTTP GET requests -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Covid-19 Statistics Tracker</title>
+  </head>
+  <body>
+    <body background="./logo512.png">
+    <div class="container">
+      <div
+        id="loginbox"
+        style="margin-top: 50px;"
+        class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"
+      >
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <h1><center>I'm a covid-19 reporter!</center></h1> 
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <span><center>you can search the country.</center></span>
+
+              <div>
+                <center><input
+                  type="string"
+                  name="country_name"
+                  id="country_name"
+                  placeholder="country name"
+                /></center>
+              </div>
+            </div>
+            <div class="text-center padding-y-sm btn-lg btn-block">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Generate!"
+                class="btn btn-primary mt-8"
+                onclick="submit()"
+              />
+            </div>
+
+            <div class="text-center padding-y-sm btn-lg btn-block">
+              
+              <!-- Spinning wheel  -->
+              <span class="loader text-center" id="loader">  </span>
+
+              <!-- ** show random value here. We modify the text in this span through javascript! ** -->
+              <span id="search_Value">  </span><br>
+              <img id="flag">  </span><br>
+              <span id="Confirmed_Value">  </span><br>
+              <span id="Deaths_Value">  </span><br>
+              <span id="Recovered_Value">  </span><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Use script.js to handle events on this page -->
+  <script type="text/javascript" src="script.js"></script>
+</html>
