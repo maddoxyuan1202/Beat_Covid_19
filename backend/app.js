@@ -104,8 +104,8 @@ app.use(cors());
                                 }
                             })
 
-                            app.listen(6000,(err)=> {
-                                console.log('app listening on port 9000!');
+                            app.listen(7000,(err)=> {
+                                console.log('app listening on port 7000!');
                             });                             
 
                         }

@@ -1,7 +1,7 @@
 # Beat_Covid_19
 A full stack project starter code for NodeJS.
 
-<img alt="Diagram" src="https://github.com/ourarash/nodejs_fullstack/blob/master/diagram.png?raw=true" width="400" text-align="center">
+<img alt="Diagram" src="process_full_stack.PNG" width="400" text-align="center">
 
 The frontend is a simple web page that takes to country name: country_name and sends it to the backend using HTTP GET request.
 The backend is a simple NodeJS server that processes the HTTP GET request, reads the parameters country_name and search its statsitics in database(got from CSSE at Johns Hopkins University (https://github.com/CSSEGISandData)) and returns the result back to the frontend.

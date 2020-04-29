@@ -46,7 +46,7 @@ async function submit() {
     let country_name = document.getElementById("country_name").value;
 
     // Address of your backend
-    let request = 'http://127.0.0.1:1903/?country_name='+country_name;
+    let request = 'http://127.0.0.1:7000/?country_name='+country_name;
     console.log("request: ", request);
 
     // Send an HTTP GET request to the backend
