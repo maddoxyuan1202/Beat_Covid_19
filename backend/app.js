@@ -81,11 +81,7 @@ app.use(cors());
 
                                 for(let i=0; i<items.country_statistics.length; i++){
                                     if (country_name==items.country_statistics[i].country){
-                                        let output = {
-                                            // total_confirmed: items.totalConfirmed,
-                                            // total_deaths: items.totalDeaths,
-                                            // total_recovered: items.totalRecovered,
-                                            // last_date_updated: items.formatted_date,
+                                            let output = {
                                             countryName : items.country_statistics[i],
                                         }
 
