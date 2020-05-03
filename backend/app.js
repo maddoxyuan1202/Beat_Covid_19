@@ -12,7 +12,7 @@ app.use(express.static("static"));
 app.use(cors());
 
 //set the file name
-
+    //get the present day, month, year
     var dateObj = new Date;
     var month = dateObj.getUTCMonth() + 1;
     var day = dateObj.getUTCDate()-2;
@@ -69,7 +69,7 @@ app.use(cors());
                                 last_date_updated: formatted_date,
                                 country_statistics: data.sort((a, b) => b.confirmed - a.confirmed)
                             }
-
+                            //deal with the query and rsend the JSON file to the frontend
                             async function handleGet(req,res,query){
                                 let error = 'NO_ERROR';
                                 let country_name;
